@@ -46,7 +46,7 @@ The Wallet App first registers the intercept protocol (URL Scheme, appLink) in t
 
 Following which, the mobile terminal application of dapp calls this protocol and transfer data to the wallet App. The request format of data transfer is structured as:
 
-simplewallet://eos.io?param={the json data}
+mathwallet://mathwallet.org?param={the json data}
 
 #### 2. Login
 
@@ -65,6 +65,7 @@ Flow chart:
 {
   protocol string   // procotol name, wallet used to distinguish different protocols, this protocol is SimpleWallet
   version     string   // Protocol version information, such as 1.0
+  blockchain string    // blockchain（eosio、eosforce、ethereum、tron）
   dappName   string   // dapp name
   dappIcon   string   // dapp Icon 
   action     string   // The assignment for login
@@ -112,6 +113,7 @@ Suitable for dapp mobile (iOS or android) access. Business flow chart is as foll
 {
 protocol string // protocol name, wallet is used to distinguish different protocols, and this protocol is SimpleWallet
 version string // protocol version information, such as 1.0
+blockchain string    // blockchain（eosio、eosforce、ethereum、tron）
 dappName string // dapp name for display in the wallet APP
 dappIcon string // dapp icon Url for display in the wallet APP
 action string // is assigned to login
@@ -135,6 +137,7 @@ Business flow chart is as follows:
 {
 protocol string // protocol name, wallet is used to distinguish different protocols, and this protocol is SimpleWallet
 version string // protocol version information, such as 1.0
+blockchain string    // blockchain（eosio、eosforce、ethereum、tron）
 dappName string // dapp name, for display in the wallet APP, optional
 dappIcon string // dapp icon Url for display in the wallet APP, optional
 action string // When the payment is assigned as transfer, required
@@ -178,6 +181,7 @@ The data package structure transfered by dapp to wallet APP
 {
 protocol   string   // procotol name, wallet used to distinguish different protocols, this protocol is SimpleWallet
 version     string   // Protocol version information, such as 1.0
+blockchain string    // blockchain（eosio、eosforce、ethereum、tron）
 action     string   // The assignment is transfer when are paying 
 dappName   string   // dapp name, for display in wallet APP, optional
 dappIcon   string   // dapp Logo Url，for display in wallet APP, optional
