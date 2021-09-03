@@ -6,7 +6,7 @@ Version: 1.0
 Math SimpleWallet API is the protocol for connecting native blockchain game mobile app to MathWallet.
 It supports multiple chains including Ethereum, Tron, etc.
 
-## Document
+## API
 
 [English](https://github.com/mathwallet/SimpleWallet/blob/master/README_en.md)
 
