@@ -18,7 +18,7 @@ It supports all EVM & Substrate blockchains including Ethereum, Bsc, Polkadot, e
 
 ## Blockchain Name String
 
-| Blockchain Name | Des |
+| Blockchain Name | Description |
 | --- | --- |
 | ethereum | Ethereum Blockchain |
 | bsc | Binance Smart Chain |
