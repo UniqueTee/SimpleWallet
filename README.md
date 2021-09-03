@@ -1,4 +1,4 @@
-# Math SimpleWallet Protocol Readme
+# MATH SimpleWallet Protocol Readme
 
 Version: 1.0
 
