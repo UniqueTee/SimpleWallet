@@ -21,10 +21,10 @@ https://github.com/mathwallet/MathWalletSDK-Android
 ## Function list
 
 - Login
-
-Scenario: The Mobile App requests login authorization to the Wallet App.
-
 - Payment
+- Transaction
+- Sign a message
+- Open Dapp URL
 
 Scenario: The Mobile App requests payment authorization (Mobile DApp)
 
