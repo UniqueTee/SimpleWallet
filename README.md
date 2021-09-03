@@ -1,6 +1,8 @@
 # MATH SimpleWallet Protocol Readme
 
-Version: 1.0
+Version: 1.5
+
+Last updated: 2021.9.3
 
 ## About
 
