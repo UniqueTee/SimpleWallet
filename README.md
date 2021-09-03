@@ -14,7 +14,16 @@ It supports all EVM & Substrate blockchains including Ethereum, Bsc, Polkadot, e
 
 [English](https://github.com/mathwallet/SimpleWallet/blob/master/README_en.md)
 
-[中文](https://github.com/mathwallet/SimpleWallet/blob/master/README.md)
+[中文](https://github.com/mathwallet/SimpleWallet/blob/master/README_cn.md)
+
+## Blockchain Name String
+
+| Blockchain Name | Des |
+| --- | --- |
+| ethereum | Ethereum Blockchain |
+| bsc | Binance Smart Chain |
+| eosio | EOS Blockchain |
+| tron | TRON Blockchain |
 
 ## SDK & Demo
 
