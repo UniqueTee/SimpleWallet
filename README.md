@@ -33,4 +33,8 @@ https://github.com/mathwallet/MathWalletSDK-iOS
 Android SDK
 https://github.com/mathwallet/MathWalletSDK-Android
 
+## Misc
+
+This Protocol is more focus on app to app connection. If you are developing a web based dapp, we'd suggest using web3js or walletconnect protocal, details can be found at https://doc.mathwallet.org
+
 Any questions, feel free to contact labs@mathwallet.org
