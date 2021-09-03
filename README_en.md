@@ -64,6 +64,8 @@ callback string // after the user completes the operation, the wallet callback p
 ```
 - Dapp server receives the data, verifies the sign data, and returns success == true or false; If the validation is successful, the user is set to logged-in in the business logic of the dapp
 
+#### 3. Payment
+
 #### Scenario: The mobile end of dapp pulls up the wallet App and requests payment authorization
 
 Business flow chart is as follows:
