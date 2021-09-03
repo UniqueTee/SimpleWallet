@@ -70,7 +70,7 @@ callback string // after the user completes the operation, the wallet callback p
 
 Business flow chart is as follows:
 
-![](https://i.imgur.com/co8vhTb.png)
+![](http://qiniu.eth.fm/2021-09-03-flow.jpg)
 
 
 The data package structure transfered by dapp to wallet APP
