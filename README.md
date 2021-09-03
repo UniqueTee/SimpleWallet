@@ -4,7 +4,7 @@ Version: 1.0
 
 ## About
 
-Math SimpleWallet is the protocol for connecting native blockchain game mobile app to MathWallet.
+MATH SimpleWallet is the protocol for connecting native blockchain game mobile app to MathWallet.
 
 It supports multiple blockchains including Ethereum, Tron, etc.
 
