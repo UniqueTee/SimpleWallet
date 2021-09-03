@@ -26,7 +26,7 @@ https://github.com/mathwallet/MathWalletSDK-Android
 
 场景：dapp的移动端拉起钱包APP请求支付授权
 
-- 交易体
+- 发送交易体上链
 
 场景：dapp的移动端拉起钱包App，执行Transaction调用智能合约接口
 
