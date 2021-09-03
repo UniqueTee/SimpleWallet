@@ -6,7 +6,7 @@ Version: 1.0
 
 MATH SimpleWallet is the protocol for connecting native blockchain game mobile app to MathWallet.
 
-It supports multiple blockchains including Ethereum, Bsc, Arbitrum, etc.
+It supports all EVM & Substrate blockchains including Ethereum, Bsc, Polkadot, etc.
 
 ## API
 
