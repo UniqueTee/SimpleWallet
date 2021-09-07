@@ -240,9 +240,7 @@ https://github.com/mathwallet/MathWalletSDK-Android
 {
     "id": "...",
 	"code": 1,
-	"result": {
-		"signature": "0x000000"
-	}
+	"result": {}
 }
 
 // 取消或错误
