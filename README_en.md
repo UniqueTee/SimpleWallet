@@ -1,6 +1,6 @@
 # SimpleWallet protocol document
 
-Version: 1.1
+Version: 2.0
 
 Last updated: 2021.9.3
 
@@ -161,6 +161,8 @@ The data package structure transfered by dapp to wallet APP
     "code": 0,
     "error": "Unknown Error"
 }
+```
+
 - The wallet assembles the above data and generates an transaction. After the user authorizes the transfer, the user submits the transfer data to the blockchain; If there is callback, pulls the dapp application
 - The Dapp will either check this transaction from the mainnet according to the txHash in callback (it cannot completely rely on this method to confirm the user's payment); or the dapp will set up the node to monitor the blockchain by itself, and check whether the tokens are received
 
@@ -169,6 +171,7 @@ The data package structure transfered by dapp to wallet APP
 #### Scenario: The mobile end of dapp pulls up the wallet App and sign a specific message for validation
 
 The data package structure transfered by dapp to wallet APP
+
 ```
 {
     ...
@@ -199,27 +202,4 @@ The data package structure transfered by dapp to wallet APP
     ...
 }
 
-```
-
-## Error Handling
-
-### Login, payment and sign error handling
-
-The code does not equal 0, and the request fails
-```
-// error return
-{
-	code number // error, equal to 0 is successful, greater than 0 means the request failed, dapp returns the specific error code
-	error string //prompt message returned
-}
-```
-
-### Open Dapp URL error handling
-
-The result does not equal 1, and the request fails
-```
-// error return
-{
-	errorMesssge string //prompt message returned
-}
 ```
