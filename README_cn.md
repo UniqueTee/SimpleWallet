@@ -56,21 +56,21 @@ https://github.com/mathwallet/MathWalletSDK-Android
     id          string   // dapp生成的，用于作为请求id
     action      string   // 具体操作(如: login\tranfer\openURL\signMessage)
     data        object   // 详情见下面场景
-    expired		number   // 请求过期时间，unix时间戳(1631006317)
+    expired	number   // 请求过期时间，unix时间戳(1631006317)
     callback    string   // 用户完成操作后，钱包回调拉起dapp移动端的回调URL，可选
-						 // 如appABC://abc.com?callback={response}
-    		         	 // response 见下面，响应数据包结构
+			 // 如appABC://abc.com?callback={response}
+    		         // response 见下面，响应数据包结构
 }
 
 // 公链数据结构(公链标识表格: https://github.com/mathwallet/SimpleWallet)
 {
-    type	string   // 公链类型(如：EVM)，必须
+    type    string   // 公链类型(如：EVM)，必须
     id      string   // 公链区分id(如：1)，必须
 }
 
 // dapp 信息数据结构
 {
-    name	string   // dapp名字，用于在钱包APP中展示，必须
+    name    string   // dapp名字，用于在钱包APP中展示，必须
     icon    string   // dapp图标Url，用于在钱包APP中展示，可选
     desc    string   // dapp 请求说明信息，可选
 }
@@ -78,7 +78,7 @@ https://github.com/mathwallet/MathWalletSDK-Android
 
 // 回调数据包结构
 {
-    id		string    // dapp 生成的请求id
+    id	    string    // dapp 生成的请求id
     code    number    // 0为用户取消，1为成功, 2为失败
     result  Object    // 具体数据，见下面使用场景，可选
     error   string    // 错误信息，可选
@@ -100,10 +100,10 @@ https://github.com/mathwallet/MathWalletSDK-Android
 // dapp传递给钱包APP的数据包结构
 
 {
-	...
+    ...
     "id": "...",
     "action": "login",
-	"data":{}
+    "data":{}
 }
 ```
 
@@ -112,18 +112,18 @@ https://github.com/mathwallet/MathWalletSDK-Android
 // 成功
 {
     "id": "...",
-	"code": 1,
-	"result": {
-		"name": "WalletName", 
-		"address": "0x000000..."
-	}
+    "code": 1,
+    "result": {
+        "name": "Ben", 			// 账户名称
+        "address": "0x000000..."	// 账户地址
+    }
 }
 
 // 取消或错误
 {
     "id": "...",
-	"code": 0,
-	"error": "用户取消"
+    "code": 0,
+    "error": "用户取消"
 }
 ```
 
@@ -139,19 +139,19 @@ https://github.com/mathwallet/MathWalletSDK-Android
 // dapp传递给钱包APP的数据包结构
 
 {
-	...
+    ...
     "id": "...",
-    "action": "login",
-	"data":{
-		"from": "0x00000...", 			// 付款人的地址，必须
-		"to": "0x00000...",   			// 付款人的地址，必须
-		"amount": "0.0001",   			// 转账数量(带精度)，必须
-		"symbol": "ETH",   				// 转账token符号，必须
-		"precision": 18, 				// 转账的token的精度，小数点后面的位数，必须
-		"contract": "0x00000", 			// 转账的token所属的contract地址，可选
-		"memo": "hello world", 			// 转账附加的数据， 格式 utf-8、hex（16进制数据必须0x开头），可选
-	}
-	...
+    "action": "transfer",
+    "data":{
+	"from": "0x00000...", 			// 付款人的地址，必须
+	"to": "0x00000...",   			// 付款人的地址，必须
+	"amount": "0.0001",   			// 转账数量(带精度)，必须
+	"symbol": "ETH",   			// 转账token符号，必须
+	"precision": 18, 			// 转账的token的精度，小数点后面的位数，必须
+	"contract": "0x00000", 			// 转账的token所属的contract地址，可选
+	"memo": "hello world", 			// 转账附加的数据， 格式 utf-8、hex（16进制数据必须0x开头），可选
+    }
+    ...
 }
 ```
 
@@ -160,17 +160,17 @@ https://github.com/mathwallet/MathWalletSDK-Android
 // 成功
 {
     "id": "...",
-	"code": 1,
-	"result": {
-		"hash": "0x000000"
-	}
+    "code": 1,
+    "result": {
+        "hash": "0x000000"
+    }
 }
 
 // 取消或错误
 {
     "id": "...",
-	"code": 0,
-	"error": "用户取消"
+    "code": 0,
+    "error": "用户取消"
 }
 ```
 
@@ -186,13 +186,14 @@ https://github.com/mathwallet/MathWalletSDK-Android
 // dapp传递给钱包APP的数据包结构
 
 {
-	...
+    ...
     "id": "...",
     "action": "signMessage",
-	"data":{
-		"messsage": "hello world", 			// 签名数据，格式 utf-8、hex（16进制数据必须0x开头），必须
-	}
-	...
+    "data":{
+	"address": "0x0000000", 			// 签名地址
+	"messsage": "hello world", 			// 签名数据，格式 utf-8、hex（16进制数据必须0x开头），必须
+    }
+    ...
 }
 ```
 
@@ -201,17 +202,17 @@ https://github.com/mathwallet/MathWalletSDK-Android
 // 成功
 {
     "id": "...",
-	"code": 1,
-	"result": {
-		"signature": "0x000000"
-	}
+    "code": 1,
+    "result": {
+        "signature": "0x000000"
+     }
 }
 
 // 取消或错误
 {
     "id": "...",
-	"code": 0,
-	"error": "用户取消"
+    "code": 0,
+    "error": "用户取消"
 }
 ```
 
@@ -224,13 +225,13 @@ https://github.com/mathwallet/MathWalletSDK-Android
 // dapp传递给钱包APP的数据包结构
 
 {
-	...
+    ...
     "id": "...",
     "action": "openURL",
 	"data":{
-		"link": "https://mathwallet.org", 			// 链接地址，必须
+            "link": "https://mathwallet.org", 			// 链接地址，必须
 	}
-	...
+    ...
 }
 ```
 
@@ -239,14 +240,14 @@ https://github.com/mathwallet/MathWalletSDK-Android
 // 成功
 {
     "id": "...",
-	"code": 1,
-	"result": {}
+    "code": 1,
+    "result": {}
 }
 
 // 取消或错误
 {
-	"id": "...",
-	"code": 0,
-	"error": "用户取消"
+    "id": "...",
+    "code": 0,
+    "error": "用户取消"
 }
 ```
