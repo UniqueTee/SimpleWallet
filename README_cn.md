@@ -72,7 +72,6 @@ https://github.com/mathwallet/MathWalletSDK-Android
 {
     name    string   // dapp名字，用于在钱包APP中展示，必须
     icon    string   // dapp图标Url，用于在钱包APP中展示，可选
-    desc    string   // dapp 请求说明信息，可选
 }
 
 
@@ -175,7 +174,7 @@ https://github.com/mathwallet/MathWalletSDK-Android
 ```
 
 - 钱包组装上述数据，生成一笔Ethereum的transaction，用户授权此笔转账后，提交转账数据到Ethereum主网；如果有callback，则回调拉起dapp的应用
-- dapp可根据callback里的txID去主网查询此笔交易（不能完全依赖此方式来确认用户的付款）；或自行搭建节点监控Ethereum（或EOS）主网同步节点，检查代币是否到账
+- dapp可根据callback里的txHash去主网查询此笔交易（不能完全依赖此方式来确认用户的付款）；或自行搭建节点监控Ethereum（或EOS）主网同步节点，检查代币是否到账
 
 
 ### 4. 消息签名

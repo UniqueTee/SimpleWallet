@@ -12,9 +12,9 @@ It supports all EVM & Substrate blockchains including Ethereum, Bsc, Polkadot, e
 
 ## API
 
-[English](https://github.com/mathwallet/SimpleWallet/blob/master/README_en.md)
+[English](https://github.com/mathwallet/SimpleWallet/blob/v2/README_en.md)
 
-[中文](https://github.com/mathwallet/SimpleWallet/blob/master/README_cn.md)
+[中文](https://github.com/mathwallet/SimpleWallet/blob/v2/README_cn.md)
 
 ## Blockchain Name String
 
