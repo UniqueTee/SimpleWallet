@@ -56,7 +56,7 @@ https://github.com/mathwallet/MathWalletSDK-Android
     id          string   // dapp生成的，用于作为请求id
     action      string   // 具体操作(如: login\tranfer\openURL\signMessage)
     data        object   // 详情见下面场景
-    expired	    number   // 请求过期时间，unix时间戳(1631006317)
+    expired		number   // 请求过期时间，unix时间戳(1631006317)
     callback    string   // 用户完成操作后，钱包回调拉起dapp移动端的回调URL，可选
 						 // 如appABC://abc.com?callback={response}
     		         	 // response 见下面，响应数据包结构
@@ -245,7 +245,7 @@ https://github.com/mathwallet/MathWalletSDK-Android
 
 // 取消或错误
 {
-    "id": "...",
+	"id": "...",
 	"code": 0,
 	"error": "用户取消"
 }
