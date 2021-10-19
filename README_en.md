@@ -53,11 +53,11 @@ mathwallet://mathwallet.org?sw={the json data}
 			 // such as appABC://abc.com?callback={response}
 }
 
-// BlockChain Object
-// Blockchain name table:: https://github.com/mathwallet/SimpleWallet
+// Chain Object
+// Chain name table:: https://github.com/mathwallet/SimpleWallet
 {
-    type    string   // blockchain type(ex：EVM),required
-    id      string   // blockchain id(1),required
+    type    string   // chain type(ex：EVM),required
+    id      string   // chain id(1),required
 }
 
 // DApp Object
