@@ -58,7 +58,7 @@ https://github.com/mathwallet/MathWalletSDK-Android
     data        object   // 详情见下面场景
     expired	number   // 请求过期时间，unix时间戳(1631006317)
     callback    string   // 用户完成操作后，钱包回调拉起dapp移动端的回调URL，可选
-			 // 如appABC://abc.com?callback={response}
+			 // 如appABC://abc.com?response={response}
     		         // response 见下面，响应数据包结构
 }
 
