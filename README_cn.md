@@ -51,7 +51,7 @@ https://github.com/mathwallet/MathWalletSDK-Android
 {
     protocol	string   // 协议名，钱包用来区分不同协议，本协议为 SimpleWallet
     version     string   // 协议版本信息，如2.0
-    blockchain  object   // 见下面，公链数据结构
+    chain  	object   // 见下面，公链数据结构
     dapp        object   // 见下面，dapp 信息数据结构
     id          string   // dapp生成的，用于作为请求id
     action      string   // 具体操作(如: login\tranfer\openURL\signMessage)
