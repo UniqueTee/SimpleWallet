@@ -43,7 +43,7 @@ mathwallet://mathwallet.org?sw={the json data}
 {
     protocol	string   // protocol name, wallet is used to distinguish different protocols, and this protocol is SimpleWallet
     version     string   // protocol version information (ex:2.0)
-    blockchain  object   // blockchain object
+    chain  	object   // chain object
     dapp        object   // dapp information
     id          string   // request id
     action      string   // reqeust action, ex: login,tranfer,openURL,signMessage
