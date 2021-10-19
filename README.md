@@ -16,11 +16,11 @@ It supports all EVM & Substrate blockchains including Ethereum, Bsc, Polkadot, e
 
 [中文](https://github.com/mathwallet/SimpleWallet/blob/v2/README_cn.md)
 
-## Blockchain Name String
+## Chain Name String
 
-| Blockchain Type | Blockchain ID | Description |
+| Chain Type | Chain ID | Description |
 | --- | --- | --- |
-| evm | 1 | Ethereum Blockchain |
+| evm | 1 | Ethereum Chain |
 | evm | 56 | Binance Smart Chain |
 | evm | 128 | Huobi ECO Chain |
 | evm | 66 | OKExChain |
