@@ -50,7 +50,7 @@ mathwallet://mathwallet.org?sw={the json data}
     data        object   // reqeust Data
     expired	number   // request expired time(ex: 1631006317)
     callback    string   //  after the user completes the operation, the wallet callback pulls up the callback URL of the dapp mobile terminal, optional
-			 // such as appABC://abc.com?callback={response}
+			 // such as appABC://abc.com?response={response}
 }
 
 // Chain Object
