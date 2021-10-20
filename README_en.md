@@ -178,7 +178,7 @@ The data package structure transfered by dapp to wallet APP
     "action": "signMessage",
     "data":{
 	"address": "0x0000000", 			// address
-	"messsage": "hello world", 			// sign message( utf-8, hex )
+	"message": "hello world", 			// sign message( utf-8, hex )
     }
     ...
 }
