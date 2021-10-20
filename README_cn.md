@@ -80,7 +80,7 @@ https://github.com/mathwallet/MathWalletSDK-Android
     id	    string    // dapp 生成的请求id
     code    number    // 0为用户取消，1为成功, 2为失败
     result  Object    // 具体数据，见下面使用场景，可选
-    error   string    // 错误信息，可选
+    message string    // 错误信息，可选
 }
 
 ```
