@@ -188,7 +188,7 @@ https://github.com/mathwallet/MathWalletSDK-Android
     "action": "signMessage",
     "data":{
 	"address": "0x0000000", 			// 签名地址
-	"messsage": "hello world", 			// 签名数据，格式 utf-8、hex（16进制数据必须0x开头），必须
+	"message": "hello world", 			// 签名数据，格式 utf-8、hex（16进制数据必须0x开头），必须
     }
     ...
 }
