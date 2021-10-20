@@ -54,7 +54,7 @@ https://github.com/mathwallet/MathWalletSDK-Android
     chain  	object   // 见下面，公链数据结构
     dapp        object   // 见下面，dapp 信息数据结构
     id          string   // dapp生成的，用于作为请求id
-    action      string   // 具体操作(如: login\tranfer\openURL\signMessage)
+    action      string   // 具体操作(如: login\transaction\openURL\signMessage)
     data        object   // 详情见下面场景
     expired	number   // 请求过期时间，unix时间戳(1631006317)
     callback    string   // 用户完成操作后，钱包回调拉起dapp移动端的回调URL，可选
@@ -122,7 +122,7 @@ https://github.com/mathwallet/MathWalletSDK-Android
 {
     "id": "...",
     "code": 0,
-    "error": "用户取消"
+    "message": "用户取消"
 }
 ```
 
@@ -136,22 +136,20 @@ https://github.com/mathwallet/MathWalletSDK-Android
 
 ```
 // dapp传递给钱包APP的数据包结构
-
+// EVM 系
 {
     ...
     "id": "...",
-    "action": "transfer",
+    "action": "transaction",
     "data":{
 	"from": "0x00000...", 			// 付款人的地址，必须
 	"to": "0x00000...",   			// 付款人的地址，必须
-	"amount": "0.0001",   			// 转账数量(带精度)，必须
-	"symbol": "ETH",   			// 转账token符号，必须
-	"precision": 18, 			// 转账的token的精度，小数点后面的位数，必须
-	"contract": "0x00000", 			// 转账的token所属的contract地址，可选
-	"memo": "hello world", 			// 转账附加的数据， 格式 utf-8、hex（16进制数据必须0x开头），可选
+	"value": "1000000000000",   		// 转账数量(1 ETH = 100000000000000000)，必须
+	"data": "0x", 			// 转账附加的数据， 格式 utf-8、hex（16进制数据必须0x开头），可选
     }
     ...
 }
+// 其它公链（待补充）
 ```
 
 - 钱包App 响应数据包结构（成功）
@@ -169,7 +167,7 @@ https://github.com/mathwallet/MathWalletSDK-Android
 {
     "id": "...",
     "code": 0,
-    "error": "用户取消"
+    "message": "用户取消"
 }
 ```
 
@@ -211,7 +209,7 @@ https://github.com/mathwallet/MathWalletSDK-Android
 {
     "id": "...",
     "code": 0,
-    "error": "用户取消"
+    "message": "用户取消"
 }
 ```
 
@@ -247,6 +245,6 @@ https://github.com/mathwallet/MathWalletSDK-Android
 {
     "id": "...",
     "code": 0,
-    "error": "用户取消"
+    "message": "用户取消"
 }
 ```
