@@ -10,10 +10,10 @@ SimpleWallet是一个数字资产钱包和移动应用（如：区块链游戏�
 ## SDK & Demo
 
 iOS SDK
-https://github.com/mathwallet/MathWalletSDK-iOS
+https://github.com/mathwallet/MathWallet5SDK-iOS
 
 Android SDK
-https://github.com/mathwallet/MathWalletSDK-Android
+https://github.com/mathwallet/MathWallet5SDK-Android
 
 ## 功能列表
 
@@ -56,7 +56,6 @@ https://github.com/mathwallet/MathWalletSDK-Android
     id          string   // dapp生成的，用于作为请求id
     action      string   // 具体操作(如: login\transaction\openURL\signMessage)
     data        object   // 详情见下面场景
-    expired	number   // 请求过期时间，unix时间戳(1631006317)
     callback    string   // 用户完成操作后，钱包回调拉起dapp移动端的回调URL，可选
 			 // 如appABC://abc.com?response={response}
     		         // response 见下面，响应数据包结构

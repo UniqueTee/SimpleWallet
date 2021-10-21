@@ -30,10 +30,10 @@ It supports all EVM & Substrate blockchains including Ethereum, Bsc, Polkadot, e
 ## SDK & Demo
 
 iOS SDK
-https://github.com/mathwallet/MathWalletSDK-iOS
+https://github.com/mathwallet/MathWallet5SDK-iOS
 
 Android SDK
-https://github.com/mathwallet/MathWalletSDK-Android
+https://github.com/mathwallet/MathWallet5SDK-Android
 
 ## Misc
 
