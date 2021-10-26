@@ -13,10 +13,10 @@ This protocol aims to reduce the development and adaption work of all parties th
 ## SDK & Demo
 
 iOS SDK
-https://github.com/mathwallet/MathWalletSDK-iOS
+https://github.com/mathwallet/MathWallet5SDK-iOS
 
 Android SDK
-https://github.com/mathwallet/MathWalletSDK-Android
+https://github.com/mathwallet/MathWallet5SDK-Android
 
 ## Function list
 
