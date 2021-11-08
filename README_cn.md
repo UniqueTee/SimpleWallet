@@ -148,6 +148,30 @@ https://github.com/mathwallet/MathWallet5SDK-Android
     }
     ...
 }
+// SOLANA 系
+{
+    ...
+    "id": "...",
+    "action": "transaction",
+    "data":{
+	"recentBlockhash": "0x00000...", 					// 付款人的地址，可选
+	"instructions": [
+	  {
+	    "keys": [
+	    	{
+		  "pubkey":"GNutLCXQEEcmxkJH5f5rw51bTW2QcLGXqitmN3EaVPoV",	// An account's public key，必须
+	    	  "isSigner": true,						// True if an instruction requires a transaction signature matching `pubkey`.必须
+	    	  "isWritable": true,						// True if the `pubkey` can be loaded as a read-write account.必须
+		}
+	    ],
+	    "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",		// Program Id，必须
+	    "data": "0x0000000",						// Program input，必须
+		
+	  }
+	]
+    }
+    ...
+}
 // 其它公链（待补充）
 ```
 
