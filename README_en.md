@@ -145,7 +145,7 @@ The data package structure transfered by dapp to wallet APP
     "id": "...",
     "action": "transaction",
     "data":{
-	"recentBlockhash": "0x00000...", 					// BlockHash，optional
+	"recentBlockhash": "C3i1dknJJguECL63uNJGXCQdzU9t5fFg7ktdJJfxEfqB", 	// BlockHash，optional
 	"instructions": [
 	  {
 	    "keys": [
