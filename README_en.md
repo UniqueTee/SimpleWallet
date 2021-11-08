@@ -138,6 +138,30 @@ The data package structure transfered by dapp to wallet APP
     }
     ...
 }
+
+// SOLANA 
+{
+    ...
+    "id": "...",
+    "action": "transaction",
+    "data":{
+	"recentBlockhash": "0x00000...", 					// BlockHash，optional
+	"instructions": [
+	  {
+	    "keys": [
+	    	{
+		  "pubkey":"GNutLCXQEEcmxkJH5f5rw51bTW2QcLGXqitmN3EaVPoV",	// An account's public key，required
+	    	  "isSigner": true,						// True if an instruction requires a transaction signature matching `pubkey`,required
+	    	  "isWritable": true,						// True if the `pubkey` can be loaded as a read-write account,required
+		}
+	    ],
+	    "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",		// Program Id，required
+	    "data": "0x0000000"							// Program input，required
+	  }
+	]
+    }
+    ...
+}
 // To be added
 
 ```
