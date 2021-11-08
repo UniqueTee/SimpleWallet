@@ -154,7 +154,7 @@ https://github.com/mathwallet/MathWallet5SDK-Android
     "id": "...",
     "action": "transaction",
     "data":{
-	"recentBlockhash": "0x00000...", 					// 付款人的地址，可选
+	"recentBlockhash": "0x00000...", 					// BlockHash，可选
 	"instructions": [
 	  {
 	    "keys": [
@@ -165,8 +165,7 @@ https://github.com/mathwallet/MathWallet5SDK-Android
 		}
 	    ],
 	    "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",		// Program Id，必须
-	    "data": "0x0000000",						// Program input，必须
-		
+	    "data": "0x0000000"							// Program input，必须
 	  }
 	]
     }
