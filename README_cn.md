@@ -154,7 +154,7 @@ https://github.com/mathwallet/MathWallet5SDK-Android
     "id": "...",
     "action": "transaction",
     "data":{
-	"recentBlockhash": "0x00000...", 					// BlockHash，可选
+	"recentBlockhash": "C3i1dknJJguECL63uNJGXCQdzU9t5fFg7ktdJJfxEfqB", 	// BlockHash，可选
 	"instructions": [
 	  {
 	    "keys": [
