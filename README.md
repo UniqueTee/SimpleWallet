@@ -24,6 +24,7 @@ It supports all EVM & Substrate blockchains including Ethereum, Bsc, Polkadot, e
 | evm | 56 | Binance Smart Chain |
 | evm | 128 | Huobi ECO Chain |
 | evm | 66 | OKExChain |
+| solana | 5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d | Solana Mainnet Beta |
 | substrate | 0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3 | Polkadot |
 | substrate | 0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe | Kusama |
 
